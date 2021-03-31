@@ -1,4 +1,6 @@
-#!groovypipeline {agent {
+#!groovy
+pipeline {
+  agent {
   docker {
     image 'jenkinsslave:latest'
     registryUrl 'http://8598567586.dkr.ecr.us-west-2.amazonaws.com'
