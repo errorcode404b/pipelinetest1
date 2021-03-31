@@ -193,7 +193,9 @@ stage('Checkout') {
         failure {
             echo "BUILD FAILURE"
         }
-    }}def keepThisBuild() {
+    }}
+
+def keepThisBuild() {
     currentBuild.setKeepLog(true)
     currentBuild.setDescription("Test Description")
 }
